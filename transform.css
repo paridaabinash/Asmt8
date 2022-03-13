@@ -1,0 +1,123 @@
+body{background-color: rgb(253, 253, 90);}
+
+h1 {text-align: center;}
+
+h2 {text-align: center;}
+
+li {
+    margin-left: 500px;
+    padding-left: 50px;
+
+}
+.flex1 {
+    width: 30vw;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skewx {
+    height: 150px;
+    width: 150px;
+    background-color: lightskyblue;
+    animation-name: skewx;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes skewx {
+    0% {transform: skewX(10deg);}
+    25% {transform: skewX(20deg);}
+    50% {transform: skewX(-10deg);}
+    75% {transform: skewX(-20deg);}
+    100% {transform: skewX(10deg);}
+}
+
+.skewy {
+    height: 150px;
+    width: 150px;
+    background-color: blueviolet;
+    animation-name: skewy;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes skewy {
+    0% {transform: skewY(10deg);}
+    25% {transform: skewY(20deg);}
+    50% {transform: skewY(-10deg);}
+    75% {transform: skewY(-20deg);}
+    100% {transform: skewY(10deg);}
+}
+
+.rotate {
+    height: 150px;
+    width: 150px;
+    background-color: darkgreen;
+    animation-name: rotate;
+    animation-duration: 3s;
+    /* animation-timing-function: linear; */
+    animation-iteration-count: 4;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.scaley {
+    height: 150px;
+    width: 150px;
+    border: 1px solid green;
+    background-color: greenyellow;
+    animation-name: scaley;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scaley {
+    0% {transform: scaleY(1);}
+    50% {transform: scaleY(0.6);}
+    100% {transform: scaleY(1);}
+}
+
+
+
+
+.scalex {
+    height: 150px;
+    width: 150px;
+    border: 1px solid darkred;
+    background-color: brown;
+    animation-name: scalex;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scalex {
+    0% {transform: scaleX(1);}
+    50% {transform: scaleX(0.5);}
+    100% {transform: scaleX(1);}
+}
+
+.rotate4 {
+    height: 150px;
+    width: 150px;
+    border: 1px solid green;
+    background-color: lightgreen;
+    animation-name: rotate4;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate4 {
+    0% {transform: rotate(90deg);}
+    50% {transform: rotate(100deg);}
+    100% {transform: rotate(0deg);} 
+}
